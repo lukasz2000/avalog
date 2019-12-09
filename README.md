@@ -1,6 +1,17 @@
 # AvaloqRecruimentProject
 
+
+# Project:
+
+The project displays the available bookmarks in the form of a table. Allows you to add a new bookmark via the form. 
+The table column called action gives us the option to remove a given bookmark from the list. 
+In addition, it is possible to filter / search for a given bookmark using the special "Find your bookmark" input.
+
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 8.3.20.
+
+# Dependency Installation
+
+Run `ng install`
 
 ## Development server
 

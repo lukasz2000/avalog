@@ -1,0 +1,47 @@
+<h3>Create BookMark</h3>
+
+<form class="bookmark-form" [formGroup]="addBookmarkForm" (ngSubmit)="onSubmit()" >
+
+  <mat-form-field >
+    <input
+      matInput
+      type="text"
+      placeholder="Name"
+      formControlName="name" required>
+    <mat-error>Name is required (min 3 characters)</mat-error>
+  </mat-form-field>
+
+  <mat-form-field>
+    <input
+      matInput
+      type="text"
+      placeholder="Url"
+      formControlName="url" required>
+    <mat-error>Correct url with pattern: 'http(s)://' is required</mat-error>
+  </mat-form-field>
+
+  <mat-form-field>
+    <mat-select
+      placeholder="Group"
+      formControlName="group" required>
+      <mat-option
+        value="work">Work</mat-option>
+      <mat-option
+        value="leisure">Leisure</mat-option>
+      <mat-option
+        value="personal">Personal</mat-option>
+    </mat-select>
+  </mat-form-field>
+
+  <button
+    mat-raised-button
+    color="primary"
+    [disabled]="addBookmarkForm.invalid"
+  >Add Bookmark</button>
+</form>
+
+
+
+
+
+
